@@ -1,0 +1,761 @@
+*{margin: 0;padding: 0;}
+body
+{
+	font-family: 'Overlock SC', cursive;
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+/*top====================*/
+#go-top {
+  position: fixed; 
+  bottom: 25px; 
+  right: 15px; 
+  cursor:pointer; 
+  display:none;
+  width: 45px;
+  height: 45px;
+  /*border-radius: 50%;*/
+  background: rgba(0,0,0,0.5);
+  /*background: rgba(78,171,234,1);*/
+  text-align: center;
+  transition: 0.3s;
+  z-index: 120;
+}
+ 
+#go-top:hover {
+  /*background: #4EABEA ;*/
+}
+#go-top:hover i{color:#4EABEA }
+#go-top i
+{
+	color: #fff;
+	margin-top: 30%;
+	animation: up 1s infinite ease-in-out alternate;
+	transition: 0.2s
+}
+@keyframes up
+{
+ 0%{
+ 	transform: translateY(-5px);
+ }
+ 100%{
+ 	transform: translateY(5px);
+ }
+}
+/*========================================*/
+/*
+font-family: 'Overlock SC', cursive;
+font-family: 'Caesar Dressing', cursive;
+*/
+.conteiner1
+{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/fon1.png) no-repeat center center;
+	background-size: cover;
+	/*background: red*/
+}
+.social{
+	width: 46px;
+	height: 200px;
+	background: rgba(191,201,205,0.1);
+	position: absolute;
+	left: 0;
+	top: calc(50% - 100px);
+	text-align: center;
+}
+.social i{
+	height: 20px;
+	font-size: 22px;
+	margin: 9px;
+	color: #BFC9CD;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.social i:hover{
+	color: #087CA7;
+	transform: scale(1.3);
+}
+ .menu
+ {
+ 	width: 610px;
+ 	/*background: red;*/
+ 	margin: auto;
+ 	padding-top: 30px;
+ 	text-align: center;
+ }
+ ul
+ {
+ 	list-style-type: none;
+ }
+ ul li a{text-decoration: none;color:#BFC9CD }
+ ul li
+ {
+ 	font-family: 'Overlock SC', cursive;
+ 	font-size: 15px;
+ 	text-decoration: none;
+ 	display: inline-block;
+ 	color: #BFC9CD;
+ 	letter-spacing: 2px;
+ 	/*background: red;*/
+ 	margin: 15px;
+ 	margin-top: 0;
+ 	cursor: pointer;
+ }
+ ul li:after
+ {
+ 	display: block;
+ 	content: '';
+ 	width: 100%;
+ 	height: 2px;
+ 	transform: scaleX(0);
+ 	transform-origin: left;
+ 	background: #5E1716;
+ 	margin-top: 5px;
+ 	transition: 0.3s ease-in-out;
+ }
+ ul li:hover::after
+ {
+	transform: scaleX(1);
+ }
+ .content1
+ {
+ 	width: 1200px;
+ 	height: 170px;
+ 	/*background: blue;*/
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: calc(50% - 600px)
+ }
+ .content1 .line
+ {
+ 	position: absolute;
+ 	bottom: 0;
+ 	width: 210px;
+ 	padding-left: 11px;
+ 	padding: 11px;
+ 	border-left: 2px solid #5E1716;
+ 	height: 93px;
+ 	/*background:#5E1716; */
+ }
+.line h1
+{
+	color: #BFC9CD;
+	font-size: 16px;
+	line-height: 1.4em;
+	font-weight: normal;
+}
+/*button=========================================*/
+
+.button1
+{
+	width: 360px;
+	height: 50px;
+	position: absolute;
+	left: calc(50% - 180px);
+	text-align: center;
+}
+.button1 a {cursor: pointer; text-decoration: none;
+	color: #BFC9CD; background: red ;
+}
+.button1 p
+{
+	width: 100%;
+	height: 100%;
+	/*color: #BFC9CD;*/
+	/*background: blue;*/
+	line-height: 50px;
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	letter-spacing: 2px;
+	font-size: 20px;
+	z-index: 3;
+	/*cursor: pointer;*/
+}
+.button1 .rt,
+.button2 .rt,
+.button3 .rt,
+.button4 .rt
+{
+	width: 70px;
+	height: 2px;
+	background: #5E1716;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	transition: 0.4s
+}
+.button1:hover .rt, .button2:hover .rt, .button3:hover .rt,.button4:hover .rt{width: 100%;}
+.button1:hover .lf, .button2:hover .lf, .button3:hover .lf,.button4:hover .lf{width: 100%;}
+.button1 .rt2,
+.button2 .rt2,
+.button3 .rt2,
+.button4 .rt2
+{
+	width: 2px;
+	height: 100%;
+	background: #5E1716;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.button1 .lf,
+.button2 .lf,
+.button3 .lf,
+.button4 .lf
+{
+	width: 70px;
+	height: 2px;
+	background: #5E1716;
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+	transition: 0.4s
+}
+.button1 .lf2,
+.button2 .lf2,
+.button3 .lf2,
+.button4 .lf2
+{
+	width: 2px;
+	height: 100%;
+	background: #5E1716;
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+}
+
+/*======================================*/
+.conteiner2
+{
+	width: 100%;
+	height: 530px;
+	background: #F4F4F4;
+	position: relative;	
+}
+.button2 .lf2,
+.button2 .lf,
+.button2 .rt,
+.button2 .rt2{background:#087CA7 }
+.conteiner2 img{
+	position: absolute;
+	bottom: 0;right: 0;
+}
+.content2{
+	width: 550px;
+	height: 530px;
+	/*background: silver;*/
+	margin: auto;
+	text-align: center;
+}
+.content2 h1
+{
+	font-size: 20px;
+	padding-top: 40px;
+	color: #181818;
+	padding-bottom: 30px;
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	letter-spacing: 4px;
+}
+.content2 p{font-size: 16px;line-height: 130%}
+.button2{
+	position: absolute;
+	bottom: 15%;
+	left: calc(50% - 91px);
+	width: 182px;
+	height: 49px;
+	/*background: red;*/
+	text-align: center;
+	line-height: 49px;
+}
+.button2 a{text-decoration: none;color: #087CA7;}
+.button2  a h1{
+	font-size: 20px;
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+}
+/*=cont3=========================*/
+.conteiner3
+{
+	width: 100%;
+	height: 530px;
+	background: #121212;
+	position: relative;	
+	text-align: center;
+}
+.conteiner3 h1{
+	font-size: 20px;
+	padding-top: 40px;
+	color: #BFC9CD;
+	padding-bottom: 30px;
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	letter-spacing: 4px;
+}
+.content3{
+	width: 830px;
+	height: 200px;
+	/*border: 3px solid red;*/
+	margin:10px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content3 .box{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	/*background: red;*/
+}
+.content3 .box #rt{
+	position: absolute;
+	top: -20px;	
+	right: -20px;
+	/*background: red;		*/
+}
+.content3 #play
+{
+	position: absolute;
+	left: calc(50% - 25px);
+	top:  calc(50% - 25px);
+	cursor: pointer;
+	transition: 0.3s
+}
+.box #play:hover{
+	transform: scale(1.3);
+}
+.content3 .box #lb{
+	position: absolute;
+	bottom:  -20px;	
+	left: -20px;
+	/*background: red;		*/
+}
+.box p{
+	color: #BFC9CD;
+	margin-top: 25px;
+}
+.button3{
+	position: absolute;
+	bottom: 15%;
+	left: calc(50% - 91px);
+	width: 190px;
+	height: 49px;
+	/*background: red;*/
+	text-align: center;
+	line-height: 49px;
+}
+.button3 a{text-decoration: none;}
+.button3 a h1{
+	color: #5E1716;
+	margin-top: -40px;
+}
+/*cont4=======================================================*/
+
+.conteiner4{
+	width: 100%;
+	height: 700px;
+	background: #F4F4F4;
+	position: relative;	
+	text-align: center;
+}
+.conteiner4 h1{
+	font-size: 20px;
+	padding-top: 40px;
+	padding-bottom: 70px;
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	letter-spacing: 4px;
+	color: #121212;
+}
+.content4{
+	width: 1045px;
+	height: 465px;
+	/*background: silver;*/
+	margin: auto;
+}
+.content4 .photo{
+	width: 377px;
+	height: 100%;
+	/*background: red;*/
+	position: relative;
+	/*cursor: pointer;*/
+}
+/*.content4 .photo img{transition: 0.3s}
+.content4 .photo:hover img{
+	opacity: 0.7;
+}*/
+.content4 #lf{
+	position: absolute;
+	bottom: -35px;
+	left: -35px;
+}
+.content4 #rt{
+	position: absolute;
+	top: -35px;
+	right: -35px;
+}
+.content4 .text{
+	position: relative;
+	width: 400px;
+	height: 100%;
+	/*background: blue;*/
+	top: -465px;
+	right: -62%;
+	/*float: right;*/
+	text-align: center;
+}
+.content4 .text h1{padding-top: 0;padding-bottom: 95px;letter-spacing: 4px;}
+.content4 .text p {line-height: 140%}
+.content4 .text hr{
+	width: 93px;
+	height: 2px;
+	background: #5E1716;
+	border: none;
+	color: #5E1716;
+	position: absolute;
+	left: calc(50% - 41px);
+	top: 100px;
+}
+
+.button4{
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 95px);
+	width: 190px;
+	height: 49px;
+	/*background: red;*/
+	text-align: center;
+	line-height: 49px;
+}
+.button4 a{text-decoration: none;}
+.button4  h1{
+	color: #087CA7;
+	/*margin-top: -40px;*/
+	padding-bottom: 0px;
+}
+.button4 .lf2,
+.button4 .lf,
+.button4 .rt,
+.button4 .rt2{background:#087CA7 }
+/*cont5========================================*/
+.conteiner5{
+	width: 100%;
+	height: 700px;
+	background: #121212;
+	position: relative;	
+	text-align: center;
+}
+.content5{
+	width: 1045px;
+	height: 465px;
+	/*background: silver;*/
+	position: relative;
+	top: 130px;
+	left: calc(50% - 522px)
+}
+.content5 .photo{
+	width: 377px;
+	height: 100%;
+	position: relative;
+	right: -64%;
+}
+
+.content5 #lf{
+	position: absolute;
+	bottom: -35px;
+	left: -35px;
+}
+.content5 #rt{
+	position: absolute;
+	top: -35px;
+	right: -35px;
+}
+
+.content5 .text{
+	position: relative;
+	width: 500px;
+	height: 100%;
+	/*background: blue;*/
+	top: -465px;
+	left: -40px;
+	text-align: center;
+}
+.content5 .text hr{
+	width: 93px;
+	height: 2px;
+	background: #087CA7;
+	border: none;
+	color: #087CA7;
+	position: absolute;
+	left: calc(50% - 41px);
+	top: 100px;
+}
+
+.content5 .text h1{
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	padding-top: 0;
+	font-size: 20px;
+	padding-bottom: 95px;
+	letter-spacing: 5px;
+	color: #BFC9CD}
+.content5 .text p {line-height: 140%;color: #BFC9CD;}
+
+.col .lf2,
+.col .lf,
+.col .rt,
+.col .rt2{background:#5E1716 }
+.col a{text-decoration: none;}
+/*cont6============================*/
+.conteiner6{
+	width: 100%;
+	height: 700px;
+	background: #F4F4F4;
+	position: relative;	
+	text-align: center;
+}
+.content6{
+	width: 1045px;
+	height: 465px;
+	/*background: silver;*/
+	position: relative;
+	top: 130px;
+	left: calc(50% - 522px)
+}
+.content6 .photo{
+	width: 377px;
+	height: 100%;
+	position: relative;
+}
+
+.content6 #lf{
+	position: absolute;
+	bottom: -35px;
+	left: -35px;
+}
+.content6 #rt{
+	position: absolute;
+	top: -35px;
+	right: -35px;
+}
+
+
+.content6 .text{
+	position: relative;
+	width: 500px;
+	height: 100%;
+	/*background: blue;*/
+	top: -465px;
+	text-align: center;
+	right: -62%;
+}
+
+.content6 .text hr{
+	width: 93px;
+	height: 2px;
+	background: #5E1716;
+	border: none;
+	color: #5E1716;
+	position: absolute;
+	left: calc(50% - 41px);
+	top: 100px;
+}
+
+.content6 .text h1{
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	padding-top: 0;
+	font-size: 20px;
+	padding-bottom: 95px;
+	letter-spacing: 5px;
+	color: #0B0B0B}
+.content6 .text p {line-height: 140%;color: #0B0B0B;}
+.col2 .lf2,
+.col2 .lf,
+.col2 .rt,
+.col2 .rt2{background:#087CA7 }
+/*cont7====================================*/
+.conteiner7{
+	width: 100%;
+	height: 700px;
+	background: #131313;
+	position: relative;	
+	text-align: center;
+}
+.content7{
+	width: 1045px;
+	height: 465px;
+	/*background: silver;*/
+	position: relative;
+	top: 130px;
+	left: calc(50% - 522px)
+}
+.content7 .photo{
+	width: 377px;
+	height: 100%;
+	position: relative;
+	right: -64%;
+}
+.content7 #lf{
+	position: absolute;
+	bottom: -35px;
+	left: -35px;
+}
+.content7 #rt{
+	position: absolute;
+	top: -35px;
+	right: -35px;
+}
+.content7 .text{
+	position: relative;
+	width: 400px;
+	height: 100%;
+	/*background: blue;*/
+	top: -465px;
+	text-align: center;
+}
+
+.content7 .text hr{
+	width: 93px;
+	height: 2px;
+	background: #087CA7;
+	border: none;
+	color: #087CA7;
+	position: absolute;
+	left: calc(50% - 41px);
+	top: 100px;
+}
+.content7 .text h1{
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	padding-top: 0;
+	font-size: 20px;
+	padding-bottom: 95px;
+	letter-spacing: 5px;
+	color: #BFC9CD}
+.content7 .text p {line-height: 140%;color: #BFC9CD;}
+/*cont8=========================*/
+.conteiner8{
+	width: 100%;
+	height: 700px;
+	background: url(../img/gal.png) center center no-repeat;
+	background-size: cover;
+	position: relative;	
+	text-align: center;
+}
+.conteiner8 h1{
+	margin: auto;
+	width: 750px;
+	padding-top: 250px;
+	font-size: 20px;
+	font-weight: normal;
+	color: #BFC9CD;
+}
+
+.col3{
+	position: absolute;
+	bottom: 200px;
+	left: calc(50% - 185px);
+	width: 370px;
+	height: 49px;
+	/*background: red;*/
+	text-align: center;
+	line-height: 49px;
+}
+.col3 .lf2,
+.col3 .lf,
+.col3 .rt,
+.col3 .rt2{background:#BFC9CD }
+.col3  a h1{
+	width: 370px;
+	font-size: 20px;
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	letter-spacing: 4px;
+}
+.conteiner9{
+	width: 100%;
+	height: 700px;
+	background: #FFFFFF;
+	position: relative;	
+	text-align:left;
+}
+.conteiner9 #rag{
+	position: absolute;
+	bottom: 0;
+	left: 0%;
+}
+.conteiner9 img{position: absolute;bottom: 0;right: 0;}
+.conteiner9 #ost{position: absolute;top: 13%;right: 18%;}
+.conteiner9 .text{
+	position: absolute;
+	top: 344px;
+	width: 470px;
+	left: calc(50% - 300px);
+	height: 265px;
+	/*background: red;*/
+}
+.conteiner9 .text p{
+	letter-spacing: 4px;
+	color: #747474;
+}
+.conteiner9 .col h1{
+	font-size: 20px;
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	letter-spacing: 4px;
+}
+/*cont10============================*/
+.conteiner10{
+width: 100%;
+	height: 664px;
+	background: url(../img/010.png) center center no-repeat;
+	background-size: cover;
+	position: relative;	
+	text-align: center;
+}
+.conteiner10 p{
+	width: 610px;
+	color: #BFC9CD;
+	margin: auto;
+	padding-top: 135px;
+	font-size: 20px;
+	letter-spacing: 3px;
+
+}
+.conteiner10 footer{
+	width: 100%;
+	height: 107px;
+	background: rgba(55,55,55,0.8);
+	position: absolute;
+	bottom: 0;
+}
+.conteiner10 .col{
+
+	position: absolute;
+	top: 48%;
+	left: calc(50% - 185px);
+	width: 370px;
+	height: 49px;
+}
+.conteiner10 .col h1{
+	font-size: 20px;
+	font-family: 'Caesar Dressing', cursive;
+	font-weight: normal;
+	letter-spacing: 4px;
+}
+.conteiner10 .col .lf2,
+.conteiner10 .col .lf,
+.conteiner10 .col .rt,
+.conteiner10 .col .rt2{background:#BFC9CD }
+footer .social{
+	position: absolute;
+	top: calc(50% - 15px);
+	left: calc(50% - 115px);
+	background: none;
+	width: 230px;
+	height: 30px;
+}
+footer .social img{margin:0 5.5px;cursor: pointer;transition: 0.4s}
+footer .social img:hover{opacity: 0.5;}
