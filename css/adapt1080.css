@@ -9,4 +9,25 @@
  	bottom: 0;
  	left: calc(50% - 40%)
  }
+
+}
+@media only screen and (min-height: 1100px) and (max-width: 1900px)
+{
+	.conteiner1
+{
+	width: 100%;
+	height: 900px;
+	background: url(../img/fon1.png) no-repeat center center;
+	background-size: cover;
+	/*background: red*/
+}
+.social{
+	width: 46px;
+	height: 200px;
+	background: rgba(191,201,205,0.1);
+	position: absolute;
+	left: 0;
+	top: 25%;
+	text-align: center;
+}
 }

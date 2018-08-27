@@ -19,13 +19,9 @@
 
 </head>
 <body>
-	<div class="wrapper">
-		 <a href="#" id="go-top" title="Вверх">
-      <i class="fa fa-arrow-up" aria-hidden="true"></i>
-   </a>
-		<div class="conteiner1">
-			<div class="menu">
+	<div class="menu">
 				<ul>
+					<li><a href="#yak0">HOME</a></li>
 					<li><a href="#yak">ABOUT VIKINGS</a></li>
 					<li><a href="#yak1">LATEST VIDEO</a></li>
 					<li><a href="#yak2">CHARACTERS</a></li>
@@ -33,6 +29,21 @@
 					<li><a href="#yak4">OST</a></li>
 				</ul>
 			</div>
+	<div class="wrapper">
+		 <a href="#" id="go-top" title="Вверх">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+   </a>
+
+		<div class="conteiner1" id="yak0">
+			<!-- <div class="menu">
+				<ul>
+					<li><a href="#yak">ABOUT VIKINGS</a></li>
+					<li><a href="#yak1">LATEST VIDEO</a></li>
+					<li><a href="#yak2">CHARACTERS</a></li>
+					<li><a href="#yak3">GALLARY</a></li>
+					<li><a href="#yak4">OST</a></li>
+				</ul>
+			</div> -->
 			<div class="social wow fadeInLeft">
 				<a href="https://www.facebook.com/Vikings/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 				<a href="https://twitter.com/historyvikings" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -271,9 +282,10 @@
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 800);
+        $('body,html').animate({scrollTop: top - 65}, 800);
     });
 });
 </script>
+<script src="js/headhesive.min.js"></script>
 </body>
 </html>

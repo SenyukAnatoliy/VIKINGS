@@ -5,6 +5,9 @@ body
 	letter-spacing: 2px;
 	font-weight: normal;
 }
+
+
+
 /*top====================*/
 #go-top {
   position: fixed; 
@@ -51,7 +54,7 @@ font-family: 'Caesar Dressing', cursive;
 {
 	width: 100%;
 	height: 100vh;
-	background: url(../img/fon1.png) no-repeat center center;
+	background: url(../img/fon1.png) no-repeat center bottom;
 	background-size: cover;
 	/*background: red*/
 }
@@ -76,19 +79,43 @@ font-family: 'Caesar Dressing', cursive;
 	color: #087CA7;
 	transform: scale(1.3);
 }
+/*menu====================*/
+.headhesive{ 
+	position: fixed;
+	transform: translateY(-100%);
+	z-index: 100;
+	/*opacity: 0.8;*/
+	/*padding-top: -10px;*/
+	/*width: 100vh */
+	transition: 0.4s
+}
+.headhesive--stick{
+	transform: translateY(0%);
+	/*top: 100px;*/
+}
+
+/*============*/
  .menu
  {
- 	width: 610px;
+ 	/*display: inline-block;*/
+ 	/*position: absolute;*/
+ 	width: 100%;
+ 	background: black;
  	/*background: red;*/
  	margin: auto;
- 	padding-top: 30px;
+ 	padding-top: 25px;
  	text-align: center;
  }
  ul
  {
  	list-style-type: none;
  }
- ul li a{text-decoration: none;color:#BFC9CD }
+ ul li a{
+ 	text-decoration: none;
+ 	color:#BFC9CD;
+ 	padding: 5px;
+	/*background: red;*/
+ 	 }
  ul li
  {
  	font-family: 'Overlock SC', cursive;
@@ -110,9 +137,9 @@ font-family: 'Caesar Dressing', cursive;
  	height: 2px;
  	transform: scaleX(0);
  	transform-origin: left;
- 	background: #5E1716;
+ 	background: #087CA7;
  	margin-top: 5px;
- 	transition: 0.3s ease-in-out;
+ 	transition: 0.4s ease-in-out;
  }
  ul li:hover::after
  {
@@ -639,7 +666,7 @@ font-family: 'Caesar Dressing', cursive;
 .conteiner8{
 	width: 100%;
 	height: 700px;
-	background: url(../img/gal.png) center center no-repeat;
+	background: url(../img/gal.png) center top no-repeat;
 	background-size: cover;
 	position: relative;	
 	text-align: center;
